@@ -1,0 +1,49 @@
+/*--------------------------------------------------------------------
+* $HEADER
+--------------------------------------------------------------------*/
+header
+  padding-top: 5px;
+  margin-bottom: 0;
+
+  h2.title
+    
+    a
+      border-bottom: none
+    
+    font-size: 30px;
+    margin-bottom: 0;
+    text-align: left;
+    float: left;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+  ul.main-nav
+    font-family: $font-family-montserrat
+    padding-top: 30px;
+    text-align: right;
+    float: right;
+    font-weight: bold;
+
+    li
+      display: inline;
+      
+    li:not(:last-child)
+      margin-right: 25px;
+
+@media only screen and (max-width: 630px)
+  header
+    padding-top: 0;
+    
+  header h2.title
+    float: none;
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+    
+  header ul.main-nav
+    padding-top: 0;
+    float: none;
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+  

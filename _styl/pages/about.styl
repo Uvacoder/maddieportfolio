@@ -1,0 +1,90 @@
+/*--------------------------------------------------------------------
+* $ABOUT
+--------------------------------------------------------------------*/
+
+header.about
+  background-image: url('../images/about-bg-leaves.jpg')
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  
+  h2.title a
+    text-shadow: 1px 1px 2px rgba(172, 172, 172, 0.8);
+    color: $white;
+    
+  a
+    text-shadow: 1px 1px 2px rgba(172, 172, 172, 0.8);
+    color: $white;
+    border-color: $white;
+    
+    
+  .foot
+    position: relative;
+    bottom: 0;
+
+.about
+  
+  .content
+    max-width: 700px;
+  
+  h1.title
+    padding: 20px 0 0;
+    
+  .pic-wrap
+    text-align: center;
+    margin: 0 auto;
+  
+    .pic
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 25px;
+      max-width: 500px;
+  
+  blockquote
+    margin: 0 auto;
+    
+  p
+    font-size: 20px;
+    
+  p, h3
+    padding: 5px 0;
+    
+  h3
+    padding-bottom: 0;
+    margin-bottom: 5px;
+    
+  ul
+    margin-bottom: 20px;
+    list-style-type: circle;
+    
+    li
+      list-style-position: inside;
+  
+  .gifs
+    margin: 0 auto;
+    text-align: center;
+    
+    h3
+      margin-bottom: 15px;
+    
+    img
+      text-align: center;
+      margin: 15px auto 0;
+      height: 200px;
+      
+      &.block
+        display: block;
+        
+      &.mr-10
+        margin-right: 15px;
+      
+@media only screen and (max-width: 630px)
+      
+  .about .pic
+    width: 80%;
+   
+  .about .gifs img
+    height: auto;
+    
+  .about h1.title
+    padding-top: 20px;

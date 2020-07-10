@@ -1,0 +1,101 @@
+/*--------------------------------------------------------------------
+* $HOME
+--------------------------------------------------------------------*/
+.content
+  max-width: 860px;
+    
+.home
+  
+  #intro
+    background-color: $blue
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: auto;
+    text-align: center;
+    color: $white;
+    
+    h2
+      font-size: 60px;
+      
+      span
+        font-style: italic;
+        padding: 0 1px;
+      
+    h1
+      font-size: 45px;
+
+    .main-pic
+      border-radius: 50%;
+      margin: 0 auto;
+      opacity: .95;
+      margin-bottom: 25px;
+      width: 200px;
+    
+    .overlay
+      background-color: $purple;
+  
+  h2
+    font-size: 40px;
+      
+  #info
+    padding: 80px 0;
+    
+    h2
+      font-size: 40px;
+      margin-bottom: 40px;
+      
+  #cta
+    background-color: $green
+    padding: 60px 0;
+    text-align: center;
+    color: $white;
+    
+    a
+      color: $white;
+      border-color: $white;
+  
+  .icons-wrap
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    
+    .item
+      flex-basis: 33%;
+      text-align: center;      
+      
+      img
+        margin: 0 auto;
+        padding-bottom: 10px;
+        
+      .large
+        width: 175px;
+      .med
+        width: 155px;
+      .small
+        width: 120px;
+        
+@media only screen and (max-width: 700px)
+  .home .icons-wrap
+    display: block;
+    
+    .item
+      flex-basis: 0;
+      margin-bottom: 70px;
+    
+      &:last-child
+        margin-bottom: 0;
+        
+  .home #intro h2
+    font-size: 46px;
+    
+  .home #intro h1
+    font-size: 36px;
+    
+  .home #info h2, .home h2
+    font-size: 36px;
+    
+  .home .rotate
+    display: block;
+      
+

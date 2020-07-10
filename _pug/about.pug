@@ -1,0 +1,51 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Kate Farrar is a product designer and developer living in Denver, CO.'
+  - var bodyClass = 'animated fadeIn about'
+
+block title
+  | About - 
+
+block content
+
+  include includes/about-header
+
+  .content
+    
+    h1.title About
+
+    section
+
+      h3.center Hi <img src="/assets/images/emoji-wave.png" width="25px" style="position:relative; top: 2px"> I'm Kate!
+
+      p I specialize in product design, user experience and user interface design,  and front-end development. I am extremely passionate about people and as a designer I love that I am able to be an advocate for users. I whole heartedly believe that design can and should be used as a force for good.
+
+      //- .pic-wrap
+      //-   img.pic(src='/assets/images/about-kate1.jpg')
+      
+      h3.center Quick Facts
+
+      ul
+        li I gasp aloud every time I see a dog. 
+        li At any given moment, I am reading 3 to 5 books. 
+        li Tangerine is my favorite flavor of La Croix. 
+        li According to science (a Buzzfeed quiz), I am 60% Leslie Knope and 40% Liz Lemon. 
+        li My all time favorite TV show is The West Wing. 
+        li My bathrobe doubles as a Jedi robe.
+
+      h3.center Want to talk? 
+      p Send me an email at <a href="mailto:kate.farrar@gmail.com">kate.farrar@gmail.com</a> or follow me on <a href="https://twitter.com/katefarrar" target="_blank">Twitter</a>, <a href="https://instagram.com/katefarrar" target="_blank">Instagram</a>, <a href="https://dribbble.com/katefarrar" target="_blank">Dribbble</a>, & <a href="https://github.com/katefarrar" target="_blank">GitHub</a>
+
+    div.gifs
+
+      h3.center Also, here are some of my favorite characters:
+
+      img(class='block' src='/assets/images/gifs/gif-leia-min.gif')
+      img(class='block' src='/assets/images/gifs/gif-30rock-min.gif')
+      img(class='mr-10' src='/assets/images/gifs/gif-pr-min.gif')
+      img(src='/assets/images/gifs/gif-cj-min.gif')
+      img(class='block' src='/assets/images/gifs/gif-hermione-min.gif')
+
+      include includes/footer
+    

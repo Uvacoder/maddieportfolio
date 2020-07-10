@@ -1,0 +1,49 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Kate Farrar is a product designer and developer living in Denver, CO.'
+  - var bodyClass = 'animated fadeIn home'
+
+block content
+
+  .content
+
+    include includes/header
+
+  section#intro
+
+    .content.clear
+
+      img.main-pic(src='/assets/images/katefarrar-2018.jpg')
+
+      h1 Hello! I'm Kate - a designer and developer living in Denver, CO.
+
+      <h2 class="demo1">I design to <span class="rotate">engage, reach, inform, help, impact, educate, inspire, connect</span> people.</h1>
+
+  .content
+
+    section#info
+
+      h2.center I specialize in
+
+      .icons-wrap
+
+        .item
+          img.icon.small(src='/assets/images/icon-lightbulb.svg')
+          h3 User Centered<br> Design
+
+        .item
+          img.icon.large(src='/assets/images/icon-screens.svg')
+          h3 Front End <br>Development
+
+        .item
+          img.icon.med(src='/assets/images/icon-bubbles.svg')
+          h3 Cross-Discipline<br> Collaboration
+     
+  section#cta
+
+    .content
+    
+      h2 Let's get to know each other!<br>Check out <a href="/work">my recent work.</a>
+    
+  include includes/footer
