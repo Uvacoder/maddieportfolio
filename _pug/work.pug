@@ -15,8 +15,6 @@ block content
 
     include includes/header
 
-    h1.title.fadeIn Work
-
     section
       h2.title Case Studies
         .work-grid
@@ -54,14 +52,27 @@ block content
     //- small ** Also open to working companies whose names don't start with the letter "B" &amp; have green in their logo **
 
     section
-      h2.title Past Products
+      h2.title Past Product Experience
       .work-grid
-        .work-logo-col Open Ideo
-        .work-logo-col Heroku
-        .work-logo-col SimpleWebRTC
-        .work-logo-col Moneythink
-        .work-logo-col Thrive Networks
-        .work-logo-col TeamSnap
+        .work-logo-col
+          a(href='https://www.openideo.com/chapters' target='_blank') 
+            img(src='/assets/images/logos/work-logo-open-ideo.png')
+        .work-logo-col 
+          a(href='https://heroku.com' target='_blank')
+            img(src='/assets/images/logos/work-logo-heroku.png')
+        .work-logo-col 
+          a(href='https://moneythink.org' target='_blank')
+            img(src='/assets/images/logos/work-logo-moneythink.png')
+      .work-grid
+        .work-logo-col 
+          a(href='https://simplewebrtc.com' target='_blank')  
+            img(src='/assets/images/logos/work-logo-swrtc.png')
+        .work-logo-col 
+          a(href='https://thrivenetworks.org/thrive-water/' target='_blank')  
+            img(src='/assets/images/logos/work-logo-thrive.png')
+        .work-logo-col 
+          a(href='https://teampsnap.com' target='_blank')  
+            img(src='/assets/images/logos/work-logo-teamsnap.png')
 
     section
       h2.title Dribbble Shots
