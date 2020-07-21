@@ -1,0 +1,52 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Kate Farrar is a product designer and developer living in Denver, CO.'
+  - var bodyClass = 'animated fadeIn case-study'
+
+block title
+  | Case Studies - 
+
+block content
+
+  .gradient
+
+  .content.case-studies
+
+    include includes/header
+
+    #intro
+
+      h1 Case Study: Bridges to Prosperity Design Workshop
+
+      figure
+        img.full(src='/assets/images/logos/b2p-header.png' alt="b2p")
+
+      h2 Objective: two day design workshop with prototype to explore possibilities for apps in the field
+
+      h2 My role: product design, workshop facilitation
+
+    #main
+
+    p Bridges for Prosperity is a non-profit group that believes <em>"Connection is the critical foundation for economic opportunity, healthcare, and education"</em>. Their team joined us for a two day workshop to explor that resulted in a lo-fidelity prototype to 
+
+      .cs-grid
+        figure.cs-col
+          img(src='/assets/images/b2p-1.jpg' alt="b2p")
+          figcaption.center 
+          small Image courtesy of Bridges to Prosperity.
+
+        figure.cs-col
+          img(src='/assets/images/b2p-1.jpg' alt="b2p")
+          figcaption.center 
+          small Image courtesy of Bridges to Prosperity.
+
+      p Two of the biggest challenges we faced were connectivity and language barriers.
+
+      small Built with the team at CauseLabs
+
+      .button-wrap
+        button
+          a(href='https://bridgestoprosperity.org/' target='_blank') Learn More
+
+    include includes/footer

@@ -1,0 +1,52 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Kate Farrar is a product designer and developer living in Denver, CO.'
+  - var bodyClass = 'animated fadeIn case-study'
+
+block title
+  | Case Studies - 
+
+block content
+
+  .gradient
+
+  .content.case-studies
+
+    include includes/header
+
+    #intro
+
+      h1 Case Study: Balancing Act
+
+      figure
+        img.full(src='/assets/images/logos/ba-header.png' alt="b2p")
+
+      h2 Objective: Create an interactive simulation for citizens to engage in public budgeting.
+
+      h2 My role: product design, front end development, branding
+
+    #main
+
+      p Balancing Act is an online experience to engage citizens in public budgeting. For two years, I lead a team of one project manager, two developers, and one strategist and was the Lead Designer and Strategist. I lead the product design, front end development, rebranding, and creation of a supplemental product called <a href="http://abalancingact.com/solutions/tax-receipt" target="_blank">Taxpayer Receipt</a>.
+
+      .cs-grid
+        figure.cs-col
+          img(src='/assets/images/b2p-1.jpg' alt="b2p")
+          figcaption.center 
+          small Image courtesy of Bridges to Prosperity.
+
+        figure.cs-col
+          img(src='/assets/images/b2p-1.jpg' alt="b2p")
+          figcaption.center 
+          small Image courtesy of Bridges to Prosperity.
+
+      p Balancing Act has been used by over 50 cities including Denver, Fort Collins, Boulder, Nashville, and San Antonio. It has been <a href="http://abalancingact.com/press" target="_blank">featured</a> on sites like <a href="https://www.fastcompany.com/3047270/this-app-lets-you-see-the-tough-choices-needed-to-balance-your-citys-budget" target="_blank">Fast Company</a>, <a href="https://www.huffingtonpost.com/larry-schooler/its-your-money-wheres-you_b_9114234.html?utm_hp_ref=politics&ir=Politics" target="_blank">HuffPost</a>, and <a href="http://www.cpr.org/news/story/washington-cant-balance-federal-budget-can-you" target="_blank">Colorado Public Radio</a>. A <a href="http://usa.v1.abalancingact.com/" target="_blank">federal budget version</a>, co-sponsored with the Bipartisan Policy Center, has been used by over 100,000 students and was featured in a <a href="https://www.pbs.org/newshour/extra/lessons-plans/lesson-plan-how-to-create-a-balanced-budget-its-a-balancing-act/" target="_blank">PBS NewsHour Lesson Plan.</a>
+
+      small Built with the team at CauseLabs
+
+      .button-wrap
+        button
+          a(href='http://abalancingact.com' target='_blank') Learn More
+
+    include includes/footer

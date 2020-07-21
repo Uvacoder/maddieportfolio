@@ -4,245 +4,66 @@
 
 .work
   
+  .content
+    max-width: 1200px;
+
   h1.title
+    text-align: left;
     padding-bottom: 0;
   
-  .work-wrap
-
-    margin: 30px 0 0;
-    max-width: 49%;
-    float: left;
-    margin-right: 2%;
+  .work-grid
+    display: flex;
+    justify-content: space-between;
     
-    &:nth-child(even)
-      margin-right: 0;
+    @media only screen and (max-width: 800px)
+      display: block;
     
-    .logo-wrap
-      
-      margin: 0 auto;
-      height: 250px;
-      max-width: 100%;
+    .work-col
+      border: 1px solid grey;
+      width: 32%;
       text-align: center;
+      border-radius: 20px;
+      padding: 20px;
+      
+      a.link
+        display: inline-block;
 
       img
-        position: relative;
-        top: 40%;
-        max-width: 75%;
-      
-      img.large
-        top: 30%;
+        margin: 0 auto;
+        display: block;
+        width: 70%;
 
-    .work-info
-      border: 2px solid;
-      padding: 30px;
-      min-height: 275px;
-
-      p.small
-        font-size: 12px;
-        padding-bottom: 5px;
-        margin-bottom: 0;
-      
-    .button-wrap
-      margin: 20px 10px 0 0;
-      
-  .light-blue
-    .logo-wrap
-      background-color: $work-light-blue;
-    .work-info
-      border-color: $work-light-blue;
-      background-color: $work-light-blue-fade;
-
-      button
-        border: 2px solid $work-light-blue;
-        
-        a
-          color: $work-light-blue;
-
-      
-  .dark-blue
-    .logo-wrap
-      background-color: $work-dark-blue;
-    .work-info
-      border-color: $work-dark-blue;
-      background-color: $work-dark-blue-fade;
-
-      button
-        border: 2px solid $work-dark-blue;
-        
-        a
-          color: $work-dark-blue;
-
-  .pink
-    .logo-wrap
-      background-color: $work-pink;
-    .work-info
-      border-color: $work-pink;
-      background-color: $work-pink-fade;
-
-      button
-        border: 2px solid $work-pink;
-        
-        a
-          color: $work-pink;
-    
-  .yellow
-    .logo-wrap
-      background-color: $work-yellow;
-    .work-info
-      border-color: $work-yellow;
-      background-color: $work-yellow-fade;
-      
-      button
-        border: 2px solid $work-yellow;
-        
-        a
-          color: $work-yellow;
-          
-  .purple
-    .logo-wrap
-      background-color: $work-purple;
-    .work-info
-      border-color: $work-purple;
-      background-color: $work-purple-fade;
-      
-      button
-        border: 2px solid $work-purple;
-        
-        a
-          color: $work-purple;
-          
-  .orange
-    .logo-wrap
-      background-color: $work-orange;
-    .work-info
-      border-color: $work-orange;
-      background-color: $work-orange-fade;
-      
-      button
-        border: 2px solid $work-orange;
-        
-        a
-          color: $work-orange;
-    
-  .teal
-    .logo-wrap
-      background-color: $work-teal;
-    .work-info
-      border-color: $work-teal;
-      background-color: $work-teal-fade;
-
-      button
-        border: 2px solid $work-teal;
-        
-        a
-          color: $work-teal;
-    
-  .red
-    .logo-wrap
-      background-color: $work-red;
-    .work-info
-      border-color: $work-red;
-      background-color: $work-red-fade;
-      
-      button
-        border: 2px solid $work-red;
-        
-        a
-          color: $work-red;
-          
-  .small
-    font-size: 16px;
-    margin: 20px 0 0;
-          
-  .case-studies
-    
-    h2.project-title
+    .work-logo-col
+      border: 1px solid grey;
+      width: 16%;
       text-align: center;
-      margin-bottom: 30px;
+      border-radius: 20px;
+      padding: 20px;
+
+/*--------------------------------------------------------------------
+* $WORK
+--------------------------------------------------------------------*/
+
+.case-study
+  .full
+    width: 100%;
+  
+  .content
+    max-width: 1200px;
     
-    h3 
-      font-style: italic;
+  .logo
+    max-width: 600px;
+    
+  #intro
+    text-align: center;
+    
+    h1, h2
+      text-align: left;
       
-    figure
-      margin: 20px 0;
-      
-      img
-        padding: 10px 0 0;
-        
-      small
-        font-size: 12px;
-      
-    hr
-      margin: 60px auto 50px;
-      width: 100%;
-      border: 0 none;
-      height: 2px;
-      
-      &.teal
-        background: $work-teal;
-        
-      &.pink
-        background: $work-pink;
-        
-      &.light-blue
-        background: $work-light-blue;
-        
-    .balancing-act
-      margin-top: 20px;
-      
-      a
-        border-bottom-color: $work-teal;
-      
-      button
-        border: 2px solid $work-teal;
-        
-        a
-          color: $work-teal;
-        
-        
-    .simplewebrtc
-      a
-        border-bottom-color: $work-pink;
-        
-      button
-        border: 2px solid $work-pink;
-        
-        a
-          color: $work-pink;
-        
-    .open-ideo
-      a
-        border-bottom-color: $work-light-blue;
-        
-      button
-        border: 2px solid $work-light-blue;
-        
-        a
-          color: $work-light-blue;
+  .cs-grid
+    display: flex;
+    
+  .cs-col
+    flex: 1;
 
-
-  @media only screen and (max-width: 800px)
-    .work-wrap
-      float: none;
-      max-width: 100%;
-      margin: 30px 0 0;
-      
-    .work-wrap .logo-wrap img.large
-      top: 15%;
-      
-    .work-wrap .logo-wrap img.med
-      top: 20%;
-      
-    .work-wrap .work-info
-      min-height: 210px;
-      
-  @media only screen and (max-width: 630px)
-    header ul.main-nav
-      padding-bottom: 10px;
-      
-  @media only screen and (max-width: 530px)
-    .work-wrap .logo-wrap img.large
-      top: 20%;
-      
-    .work-wrap .logo-wrap img.med
-      top: 30%;
+    

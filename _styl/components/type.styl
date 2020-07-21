@@ -26,8 +26,7 @@ h1
     color: $purple
     
 h1.title
-  text-transform: uppercase;
-  font-size: 24px;
+  font-size: 40px;
 
 h2
   font-size: 24px
@@ -38,12 +37,15 @@ h3
 
 a
   text-decoration: none
+  
+.link
+  font-family: $font-family-roboto-mono
 
 em
   font-style: italic
 
 strong
-  font-weight: $font-weight-semibold
+  font-weight: $font-weight-bold
 
 small
   font-size: 14px
@@ -51,8 +53,9 @@ small
 
 .content a,
 .container a
-  border-bottom: 2px solid $blue
-  text-decoration: none
+  // background: linear-gradient(to top, #45B4FF 35%,transparent 35%)
   color: $gray
-  &:hover
-    opacity: .8;
+  top: 0
+  // &:hover
+  //   opacity: .8
+  //   top: -1px
