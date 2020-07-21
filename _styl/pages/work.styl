@@ -17,21 +17,23 @@
     
     @media only screen and (max-width: 800px)
       display: block;
+      width: 100%;
     
     .work-col
-      border: 1px solid grey;
       width: 32%;
       text-align: center;
-      border-radius: 20px;
-      padding: 20px;
       
-      a.link
+      @media only screen and (max-width: 800px)
+        width: 100%;
+      
+      a
         display: inline-block;
+        &:hover
+          opacity: .8
 
       img
         margin: 0 auto;
         display: block;
-        width: 70%;
 
     .work-logo-col
       border: 1px solid grey;

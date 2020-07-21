@@ -23,13 +23,19 @@ header
     text-align: right;
     float: right;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 20px
 
     li
       display: inline;
       
     li:not(:last-child)
       margin-right: 25px;
+      
+    a
+      background: linear-gradient(to top, #45B4FF 15%,transparent 15%)
+      color: $gray
+      &:hover
+        opacity: .8
 
 @media only screen and (max-width: 630px)
   header
