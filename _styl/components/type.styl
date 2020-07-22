@@ -10,7 +10,6 @@ body
 
 h1, h2, h3, h4
   font-family: $font-family-roboto
-  font-weight: bold
   margin: 0 0 1em
   
 h1
@@ -23,17 +22,17 @@ h1
   font-size: 28px
 
   a
-    color: $purple
+    color: $gray
     
 h1.title
-  font-size: 40px;
+  font-size: 40px
 
 h2
   font-size: 24px
   margin-bottom: .25em
 
 h3
-  font-size: 20px
+  font-size: 24px
 
 a
   text-decoration: none
@@ -49,9 +48,10 @@ small
   font-size: 14px
   color: $grey-med
 
-.content a,
-.container a
-  background: linear-gradient(to top, #45B4FF 10%,transparent 10%)
-  color: $gray
-  &:hover
-    opacity: .8
+.content p, h2
+  a
+    background: linear-gradient(to top, #FFE81D 10%,transparent 10%)
+    color: $gray
+    &:hover
+      opacity: .8
+  
