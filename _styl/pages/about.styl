@@ -2,16 +2,6 @@
 * $ABOUT
 --------------------------------------------------------------------*/
 
-// header.about
-//   background-image: url('../images/about-bg-leaves.jpg')
-//   background-size: cover;
-//   background-position: center;
-//   height: 400px; 
-    
-  .foot
-    position: relative;
-    bottom: 0;
-
 .about
   
   .content
@@ -21,7 +11,33 @@
     font-size: 40px;
     text-align: left;
     padding: 20px 0 0;
+
+  .img-wrap {
+    float: right;
+    padding-top: 50px;
+
+    @media only screen and (max-width: 800px) {
+      float: none;
+      padding-top: 0;
+      text-align: center;      
+    }
+
+    img.bio {
+      border-radius: 50%;
+      width: 260px;
+    }
+  }
     
+  .text-wrap {
+    float: left;
+    width: 65%;
+    
+      @media only screen and (max-width: 800px) {
+      float: none;
+      width: 100%;
+    }
+  }
+
   .pic-wrap
     text-align: center;
     margin: 0 auto;
