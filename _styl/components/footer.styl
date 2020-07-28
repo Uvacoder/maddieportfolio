@@ -14,16 +14,25 @@ footer
 
     .flex-grid
       display: flex;
+      
+      @media only screen and (max-width: 800px)
+          display: block;
     
     .col
       flex: 1;
       
+      @media only screen and (max-width: 800px)
+          text-align: center;
+      
     .social
       text-align: right;
+      @media only screen and (max-width: 800px)
+          text-align: center;
 
       a
-        color: $yellow;
+        color: $green;
         font-size: 30px;
+        transition: 0.2s ease all 
         &:not(:last-child) {
           margin-right: 5px;
         }
