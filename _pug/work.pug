@@ -15,41 +15,125 @@ block content
 
     include includes/header
 
-    section
+    section.case-studies
       h2.title Case Studies
-        .work-grid
-          .work-col
-            a(href='/work-bonusly').link
-              img.full(src='/assets/images/logos/bonusly-header.png' alt='bonusly')
-              span view case study
+      .work-grid
 
-          .work-col
-            a(href='/work-ba').link
-              img.full(src='/assets/images/logos/ba-header.png' alt='balancing act')
-              span view case study
+        .work-col.dark-blue
+          .logo-wrap
+            img(src='/assets/images/logos/bonusly-header.png')
 
-          .work-col
-            a(href='/work-b2p').link
-              img.full(src='/assets/images/logos/b2p-header.png' alt='bridges to prosperity')
-              span view case study
+          .work-info
+            div
+              h2 Bonusly
+              
+              p Bonusly is a fun, personal employee recognition and rewards program.
+              
+              p.small My role: lead product designer
+              
+              .button-wrap
+                button
+                  a(href='/work-bonusly') View Case Study
 
-    //- section
-    //-   h2.title Case Studies
-    //-   .work-grid
-    //-     .work-col
-    //-       img(src='/assets/images/logos/bonusly-logo.svg')
-    //-       h3 Bonusly
-    //-       a(href='/work/bonusly').link view case study
-    //-     .work-col
-    //-       img(src='/assets/images/logos/balancing-act-logo.svg')
-    //-       h3 Balancing Act
-    //-       a(href='/work/balancing-act').link view case study
-    //-     .work-col
-    //-       img(src='/assets/images/logos/b2p-logo.svg') 
-    //-       h3 Bridges to Prosperity
-    //-       a(href='/work/b2p').link view case study
+        .work-col.dark-blue
+          .logo-wrap
+            img(src='/assets/images/logos/ba-header.png')
 
-    //- small ** Also open to working companies whose names don't start with the letter "B" &amp; have green in their logo **
+          .work-info
+            div
+              h2 Balancing Act
+              
+              p An online experience to engage citizens in public budgeting.
+              
+              p.small My role: lead product designer
+              
+              .button-wrap
+                button
+                  a(href='/work-ba') View Case Study
+
+        .work-col.dark-blue
+          .logo-wrap
+            img(src='/assets/images/logos/b2p-header.png')
+
+          .work-info
+            div
+              h2 Brides to Prosperity
+              
+              p Design workshop to develop a prototype tablet app.
+              
+              p.small My role: workshop facilitator, lead product designer
+              
+              .button-wrap
+                button
+                  a(href='/work-b2p') View Case Study
+
+
+        //- .work-grid
+        //-   .work-col
+        //-     a(href='/work-bonusly').link
+        //-       img.full(src='/assets/images/logos/bonusly-header.png' alt='bonusly')
+        //-       span view case study
+
+        //-   .work-col
+        //-     a(href='/work-ba').link
+        //-       img.full(src='/assets/images/logos/ba-header.png' alt='balancing act')
+        //-       span view case study
+
+        //-   .work-col
+        //-     a(href='/work-b2p').link
+        //-       img.full(src='/assets/images/logos/b2p-header.png' alt='bridges to prosperity')
+        //-       span view case study
+
+    h2.title Past Product Experience
+    .work-grid
+
+        .work-col.dark-blue
+          .logo-wrap
+            img(src='/assets/images/work-logo-bonusly.png')
+
+          .work-info
+            div
+              h2 Bonusly
+              
+              p Bonusly is a fun, personal employee recognition and rewards program.
+              
+              p.small My role: lead product designer
+              
+              .button-wrap
+                button
+                  a(href='http://bonus.ly' target='_blank') Learn More
+
+        .work-col.dark-blue
+          .logo-wrap
+            img(src='/assets/images/work-logo-causelabs.png')
+
+          .work-info
+            div
+              h2 CauseLabs
+              
+              p Complete website redesign for CauseLabs, a socially concious innovation firm.
+              
+              p.small My role: product design, responsive web, front end development
+              
+              .button-wrap
+                button
+                  a(href='http://causelabs.com' target='_blank') Learn More
+
+        .work-col.teal
+          .logo-wrap
+            img(src='/assets/images/work-logo-causelabs.png')
+
+          .work-info
+            div
+              h2 Balancing Act
+              
+              p An online experience to engage citizens in public budgeting.
+              
+              p.small My role: product design, front end development
+              
+              .button-wrap
+                button
+                  a(href='http://abalancingact.com' target='_blank') Learn More
 
     section
       h2.title Past Product Experience

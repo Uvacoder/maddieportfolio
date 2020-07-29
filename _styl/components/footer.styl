@@ -32,13 +32,15 @@ footer
       a
         color: $green;
         font-size: 30px;
-        transition: 0.2s ease all 
+        transition: 0.2s ease all
+        position: relative
         &:not(:last-child) {
           margin-right: 5px;
         }
 
-        &:hover
-          opacity: .8;
+        &:hover, &:active
+          opacity: .8
+          top: 1px
         
     .middle
       
