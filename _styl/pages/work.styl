@@ -10,32 +10,90 @@
   h1.title
     text-align: left;
     padding-bottom: 0;
+    
+  .work-col
+    width: 49%;
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #F20303, #FFE81D, #3CE389, #6DC4FF);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #fff inset;
+    
+    &:nth-child(odd)
+      background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #6DC4FF, #3CE389, #FFE81D, #F20303);
+      
+  .logo-wrap
+    margin: 0 auto;
+    height: 165px;
+    max-width: 100%;
+    text-align: center;
+    
+    img
+      position: relative;
+      top: 40%;
+      max-width: 60%;
+      
+  .work-info
+    border-top: 2px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to left, #F20303, #FFE81D, #3CE389, #6DC4FF);
+    padding: 30px;
+    min-height: 275px;
+    
+    &.even
+      border-image-source: linear-gradient(to left, #6DC4FF, #3CE389, #FFE81D, #F20303);
+      
+    p.small
+      font-size: 12px;
+      padding-bottom: 5px;
+      margin-bottom: 0;
+        
+    .button-wrap
+      margin: 20px 10px 0 0;
+      
+    button
+      display: inline-block;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      font-size: 14px;
+      padding: .375rem .75rem;
+      border-radius: .25rem;
+      border: 2px solid $blue;
+      margin-right: 10px;
+      background-color: transparent;
+      
+      &:hover
+        opacity: .8;
+      
+      a
+        color: $blue;
   
   .work-grid
     display: flex;
     justify-content: space-between;
-    
+    margin-bottom: 40px;
+      
     @media only screen and (max-width: 800px)
       display: block;
-      width: 100%;
+      justify-content: none;
     
     .work-col
       width: 32%;
       
       @media only screen and (max-width: 800px)
         width: 100%;
+        margin-bottom: 40px;
       
       a
         display: inline-block;
         &:hover
           opacity: .8
-          
-      .link
-        background: none;
 
       img
-        margin: 0 auto;
-        display: block;
+        width: 200px;
 
     .work-logo-col
       width: 32%;
@@ -50,12 +108,32 @@
         &:hover
             opacity: .8;
       
-      @media only screen and (max-width: 600px)
+      @media only screen and (max-width: 800px)
         width: 100%;
 
         img
           width: 60%;
-                
+          
+  .case-studies
+    .work-col
+      border: 3px solid $blue;
+      
+      .logo-wrap
+        
+        @media only screen and (max-width: 800px)
+          height: auto;
+          min-height: 100px;
+              
+        img
+          width: auto;
+          max-width: 100%
+          top: 0;
+          
+      .work-info
+        border-top: 3px solid $blue;
+        border-image-source: none;
+        text-align: left;
+    
         
 /*--------------------------------------------------------------------
 * $CASE STUDIES
@@ -123,158 +201,13 @@
     display: flex;
     justify-content: space-between;
     
+    @media only screen and (max-width: 600px) {
+      display: block;
+    }
+    
   .cs-col-2
     width: 48%;
     
-.case-studies
-  .logo-wrap
-    height: auto;
-    
-    img
-      width: auto;
-      max-width: 100%
-      top: 0;
-
-    .work-info
-      text-align: left;
-
-.work-grid
-    display: flex;
-    justify-content: space-between;
-    
-  .work-col
-    width: 49%;
-
-  .logo-wrap
-    margin: 0 auto;
-    height: 250px;
-    max-width: 100%;
-    text-align: center;
-    
-    img
-      position: relative;
-      top: 40%;
-      max-width: 75%;
-      
-    img.large
-      top: 30%;
-    
-  .work-info
-    border: 2px solid;
-    padding: 30px;
-    min-height: 275px;
-
-  p.small
-    font-size: 12px;
-    padding-bottom: 5px;
-    margin-bottom: 0;
-      
-  .button-wrap
-    margin: 20px 10px 0 0;
-          
-  .light-blue
-    .logo-wrap
-      background-color: $work-light-blue;
-    .work-info
-      border-color: $work-light-blue;
-      background-color: $work-light-blue-fade;
-
-      button
-        border: 2px solid $work-light-blue;
-        
-        a
-          color: $work-light-blue;
-
-      
-  .dark-blue
-    .logo-wrap
-      background-color: $work-dark-blue;
-    .work-info
-      border-color: $work-dark-blue;
-      background-color: $work-dark-blue-fade;
-
-      button
-        border: 2px solid $work-dark-blue;
-        
-        a
-          color: $work-dark-blue;
-
-  .pink
-    .logo-wrap
-      background-color: $work-pink;
-    .work-info
-      border-color: $work-pink;
-      background-color: $work-pink-fade;
-
-      button
-        border: 2px solid $work-pink;
-        
-        a
-          color: $work-pink;
-    
-  .yellow
-    .logo-wrap
-      background-color: $work-yellow;
-    .work-info
-      border-color: $work-yellow;
-      background-color: $work-yellow-fade;
-      
-      button
-        border: 2px solid $work-yellow;
-        
-        a
-          color: $work-yellow;
-          
-  .purple
-    .logo-wrap
-      background-color: $work-purple;
-    .work-info
-      border-color: $work-purple;
-      background-color: $work-purple-fade;
-      
-      button
-        border: 2px solid $work-purple;
-        
-        a
-          color: $work-purple;
-          
-  .orange
-    .logo-wrap
-      background-color: $work-orange;
-    .work-info
-      border-color: $work-orange;
-      background-color: $work-orange-fade;
-      
-      button
-        border: 2px solid $work-orange;
-        
-        a
-          color: $work-orange;
-    
-  .teal
-    .logo-wrap
-      background-color: $work-teal;
-    .work-info
-      border-color: $work-teal;
-      background-color: $work-teal-fade;
-
-      button
-        border: 2px solid $work-teal;
-        
-        a
-          color: $work-teal;
-    
-  .red
-    .logo-wrap
-      background-color: $work-red;
-    .work-info
-      border-color: $work-red;
-      background-color: $work-red-fade;
-      
-      button
-        border: 2px solid $work-red;
-        
-        a
-          color: $work-red;
-
-    
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+    }
