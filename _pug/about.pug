@@ -2,7 +2,7 @@ extends layout
 
 block vars
   - var pageDescription = 'Kate Farrar is a product designer living in CO.'
-  - var bodyClass = 'animated fadeIn about'
+  - var bodyClass = 'animate__animated animate__fadeIn about'
 
 block title
   | About - 
@@ -22,16 +22,19 @@ block content
 
       .text-wrap
 
-        h3 Hi <img src="/assets/images/emoji-wave.png" width="25px" style="position:relative; top: 2px"> I'm Kate!
+        h3 Hi, I'm Kate! <img src="/assets/images/logos/pride-flag.png" width="25px" class="emoji">
 
         p I specialize in product design, user experience and user interface design,  and front-end development. I am extremely passionate about people and as a designer I love that I am able to be an advocate for users. I whole heartedly believe that design can and should be used as a force for good.
 
         p I currently reside in beautiful Colorado with my partner, Abby, our dogs, Norah and Rosie, and our cat, Henry.
 
+        //- p <img src="/assets/images/about-norah.jpg" class="pets"> <img src="/assets/images/about-henry.jpg" class="pets">
+
         h3 Let's Connect 
         p Send me some <a href="mailto:kate.farrar@gmail.com">electronic mail</a> or check out my resume on <a href="https://www.linkedin.com/in/katefarrar/" target="_blank">LinkedIn</a>. Also would love to connect on <a href="https://twitter.com/katefarrar" target="_blank">Twitter</a>, <a href="https://instagram.com/katefarrar" target="_blank">Instagram</a>, <a href="https://dribbble.com/katefarrar" target="_blank">Dribbble</a>, & <a href="https://github.com/katefarrar" target="_blank">GitHub</a>.
 
-      
+        p
+          small Thanks to <a href="https://twitter.com/brycrasch" target="_blank">Bry Crasch</a> for the amazing updated <a href="https://www.bustle.com/p/inclusive-lgbtq-pride-emojis-didnt-exist-so-i-created-some-4107584" target="_blank">Pride Flag emoji</a>.
 
     include includes/footer
     

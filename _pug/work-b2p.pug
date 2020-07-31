@@ -2,7 +2,7 @@ extends layout
 
 block vars
   - var pageDescription = 'Kate Farrar is a product designer living in CO.'
-  - var bodyClass = 'animated fadeIn case-study'
+  - var bodyClass = 'animate__animated animate__fadeIn case-study'
 
 block title
   | Case Study: Bridges to Prosperity - 
@@ -95,8 +95,8 @@ block content
               small Lo-fi prototype
 
     .btn-left.clear
-      a.rainbow(href='/work') Back to Work
-    .btn-right.clear
       a.rainbow(href='https://bridgestoprosperity.org/' target='_blank') Visit B2P
+    .btn-right.clear
+      a.rainbow(href='/work') Back to Work
         
   include includes/footer

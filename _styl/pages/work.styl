@@ -40,7 +40,6 @@
     border-width: 2px;
     border-image-source: linear-gradient(to left, #F20303, #FFE81D, #3CE389, #6DC4FF);
     padding: 30px;
-    min-height: 275px;
     
     &.even
       border-image-source: linear-gradient(to left, #6DC4FF, #3CE389, #FFE81D, #F20303);
@@ -61,7 +60,7 @@
       font-size: 14px;
       padding: .375rem .75rem;
       border-radius: .25rem;
-      border: 2px solid $red;
+      border: 2px solid $blue;
       margin-right: 10px;
       background-color: transparent;
       
@@ -69,7 +68,7 @@
         opacity: .8;
       
       a
-        color: $red;
+        color: $blue;
   
   .work-grid
     display: flex;
@@ -119,6 +118,7 @@
       border: 3px solid $blue;
       
       .logo-wrap
+        height: auto;
         
         @media only screen and (max-width: 800px)
           height: auto;
@@ -127,7 +127,8 @@
         img
           width: auto;
           max-width: 100%
-          top: 0;
+          display: block;
+
           
       .work-info
         border-top: 3px solid $blue;
@@ -166,6 +167,8 @@
     
     @media only screen and (max-width: 600px) {
       float: none;
+      text-align: center;
+      margin-top: 40px;
     }
 
   }
@@ -175,6 +178,7 @@
     
     @media only screen and (max-width: 600px) {
       float: none;
+      text-align: center;
     }
   }
     
@@ -184,6 +188,7 @@
           
     h1
       text-align: center;
+      font-size: 32px;
       
   #main
     max-width: 1000px;
@@ -210,6 +215,7 @@
     
     @media only screen and (max-width: 600px) {
       display: block;
+      margin: 0 auto;
     }
     
   .cs-grid-3
@@ -226,6 +232,7 @@
     
     @media only screen and (max-width: 600px) {
       width: 100%;
+      margin-bottom: 20px;
     }
     
   .cs-col-3
@@ -233,4 +240,5 @@
     
     @media only screen and (max-width: 600px) {
       width: 100%;
+      margin-bottom: 20px;
     }
