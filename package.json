@@ -28,6 +28,7 @@
     "grunt-css-mqpacker": "^3.0.1",
     "grunt-postcss-import": "^0.0.1",
     "jstransformer-markdown-it": "^2.1.0",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "ws": ">=5.2.3"
   }
 }
