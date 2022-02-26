@@ -10,33 +10,35 @@ header
     a
       background: none
     
-    font-size: 30px;
-    margin-bottom: 0;
-    text-align: left;
-    float: left;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-weight: $medium
+    font-size: 40px
+    margin-bottom: 0
+    text-align: left
+    float: left
+    letter-spacing: 1px
+    font-weight: $black
 
   ul.main-nav
-    font-family: $font-family-roboto
+    font-family: $font-family-baloo
     padding-top: 30px
     text-align: right
     float: right
     font-size: 20px
-    font-weight: $medium
+    font-weight: $bold
+    
 
     li
       display: inline;
       
     li:not(:last-child)
-      margin-right: 25px;
+      margin-right: 10px;
       
     a
-      background: linear-gradient(to top, #FFE81D 25%,transparent 25%)
-      color: $gray
+      background: $blue
+      color: $white
       position: relative
       transition: 0.2s ease all
+      border-radius: 1rem
+      padding: .1rem .75rem;
       &:hover
         opacity: .8
         top: 1px
