@@ -7,53 +7,54 @@
   .content
     max-width: 1100px;
   
-  h1.title
-    font-size: 40px;
+  h1
+    font-size: 44px;
+    margin-bottom: 20px;
     text-align: left;
-    padding: 20px 0 0;
     
   .pets {
     border-radius: 50%;
     width: 150px;
   }
 
+  .grid
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    flex-direction: row-reverse;
+      
+    @media only screen and (max-width: 800px)
+      padding-top: 0;
+      display: block;
+      justify-content: none;
+  
+    .col-sm
+      width: 40%;
+      
+      @media only screen and (max-width: 800px)
+        width: 100%;
+
+    .col-md
+      width: 60%;
+
+      @media only screen and (max-width: 800px)
+        width: 100%;
+
   .img-wrap {
-    float: right;
-    padding-top: 50px;
+    padding: 85px 0 0 40px;
 
     @media only screen and (max-width: 800px) {
-      float: none;
-      padding-top: 0;
+      padding: 0 18%;
       text-align: center;
-      margin-bottom: 30px;    
+      margin-bottom: 20px;    
     }
 
     img.bio {
+      border: 3px solid $blue;
       border-radius: 50%;
-      width: 260px;
     }
     
   }
-    
-  .text-wrap {
-    float: left;
-    width: 65%;
-    
-      @media only screen and (max-width: 800px) {
-      float: none;
-      width: 100%;
-    }
-  }
-
-  .pic-wrap
-    text-align: center;
-    margin: 0 auto;
-  
-    .pic
-      text-align: center;
-      margin: 0 auto;
-      margin-bottom: 25px;
-      max-width: 500px;
   
   blockquote
     margin: 0 auto;
