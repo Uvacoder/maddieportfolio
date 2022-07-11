@@ -27,8 +27,10 @@
     h1
       font-size: 55px;
       margin-top: 10px;
+      line-height: 4rem;
       @media only screen and (max-width: 800px)
         font-size: 40px;
+        line-height: normal;
 
       a
         background: linear-gradient(to top, #FFE81D 10%,transparent 10%)
@@ -39,8 +41,10 @@
       
     h2
       font-size: 44px;
+      line-height: 3rem;
       @media only screen and (max-width: 800px)
         font-size: 32px;
+        line-height: normal;
       
       
     h3
@@ -101,7 +105,7 @@
         text-align: center;
         white-space: nowrap;
         vertical-align: middle;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: $semibold;
         padding: .5rem .85rem;
         border: 2px solid $blue;
@@ -125,8 +129,9 @@
         justify-content: none;
       
       .work-col
-        width: 25%;
+        width: 49%;
         border-radius: 1rem;
+        border: 3px solid $blue;
         
         @media only screen and (max-width: 800px)
           width: 100%;
@@ -162,13 +167,9 @@
             
     .case-studies
       .work-col
-        
-        .logo-wrap
-          height: auto;
           
           @media only screen and (max-width: 800px)
             height: auto;
-            min-height: 100px;
                 
           img
             width: auto;
@@ -177,7 +178,11 @@
 
             
         .work-info
+          padding: 10px 20px;
           text-align: left;
+
+          h3
+            margin: 10px 0;
 
           button
             border: 2px solid $blue

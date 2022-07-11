@@ -11,8 +11,9 @@
     font-size: 36px;
     text-align: left;
     padding-bottom: 0;
+    margin-bottom: 0;
 
-  h2.title
+  h2
     font-size: 30px;
     
   .work-col
@@ -46,9 +47,12 @@
     
     &.even
       border-image-source: linear-gradient(to left, #6DC4FF, #3CE389, #FFE81D, #F20303);
+
+    p
+      font-size: 16px;
       
     p.small
-      font-size: 12px;
+      font-size: 14px;
       padding-bottom: 5px;
       margin-bottom: 0;
         
@@ -60,7 +64,7 @@
       text-align: center;
       white-space: nowrap;
       vertical-align: middle;
-      font-size: 14px;
+      font-size: 16px;
       font-weight: $semibold;
       padding: .5rem .85rem;
       border: 2px solid $blue;
@@ -78,7 +82,6 @@
     display: flex;
     flex-wrap: wrap
     justify-content: space-between;
-    margin-bottom: 40px;
       
     @media only screen and (max-width: 800px)
       display: block;
